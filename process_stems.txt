@@ -1,0 +1,51 @@
+# H2 — stems for PROCESS FRICTION (not emotional pain, but the work itself).
+#
+# Why a separate dictionary: "I hate this system" is anger. "every month I copy
+# this by hand into excel" is FRICTION — measurable, repeatable, and much more useful,
+# because it describes a task that can be removed. Anger tells you something is disliked.
+# Friction tells you WHAT exactly is done by hand.
+#
+# RULE: anchored with \b, check with h2_validate.sh after every addition.
+# EN
+manual
+click
+# WARNING — "support" and "ticket" DEPEND ON THE INDUSTRY. Measured 2026-08-15
+# on r/MuseumPros (385 units):
+#   support → 22 hits, but it means "donor support", "community support",
+#             "supportive colleagues". A neutral, often positive word.
+#   ticket  → catches TICKETING/ticketing/tickets, which are ADMISSION TICKETS, i.e. the
+#             core business term of that industry, not a bug report.
+# In r/msp both would be real signals. So they are narrowed to phrases
+# that carry friction regardless of industry. Lengthening the stem does not help here —
+# the problem is not the word form, but its meaning in context.
+support ticket
+raise a ticket
+open a ticket
+helpdesk
+spreadsheet
+copy.?past
+re.?enter
+re.?type
+double entry
+by hand
+workaround
+# SL
+ročn
+rocn
+prepis
+čakat
+cakat
+podvaj
+preglednic
+# HR
+ručno
+rucno
+prepis
+čekat
+cekat
+tablic
+# IT
+manualment
+a mano
+attesa
+foglio

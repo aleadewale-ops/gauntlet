@@ -1,0 +1,39 @@
+# H2 — stems for the BUYING SIGNAL. One word per line, # is a comment.
+#
+# Why a dictionary separate from pain (measured 2026-08-15):
+#   r/MuseumPros   pain 3  · buying signal 22
+#   r/Dentistry    pain 0  · buying signal 18
+#   r/nonprofit    pain 1  · buying signal 19
+#   r/travelagents pain 1  · buying signal 17
+# The buying signal is 6–18x more frequent AND commercially stronger. Whoever writes
+# "we are looking to switch CRM databases" is a buyer in the market. Whoever grumbles is not.
+#
+# RULE: anchored with \b, check with h2_validate.sh
+# EN
+recommend
+alternativ
+switch
+migrat
+replac
+evaluat
+shortlist
+looking for
+anyone (use|using|tried)
+worth it
+# SL
+priporo
+zamenj
+iscem
+iščem
+prehod
+# HR
+preporu
+zamjen
+trazim
+tražim
+prijelaz
+# IT
+consigl
+sostitu
+cerco
+passare

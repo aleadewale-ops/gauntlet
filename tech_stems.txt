@@ -1,0 +1,25 @@
+# H2 — stems for TOOLS. One word per line, # is a comment.
+# RULE: every stem is anchored with \b at the start when the pattern is built.
+# If a stem still catches English words, LENGTHEN it, don't remove it.
+# Check with:  bash h2_validate.sh <corpus.jsonl>
+softw
+platform
+dashboard
+portal
+subscription
+vendor
+licen
+integrac
+# SL
+orodj
+sistem
+program
+aplikacij
+nadgradn
+# HR
+sustav
+alat
+# IT
+gestional
+piattaform
+applicazion

@@ -1,0 +1,72 @@
+# H2 — stems for PAIN. One word per line, # is a comment.
+# RULE: anchored with \b. Where they clash with English, the stems are LENGTHENED:
+#   spor  -> sporo   ("sport" starts with spor)
+#   lent  -> lento   ("equivalent", "talent")
+#   drag  -> drag[oiae]
+#   skup  -> skupo   ("skupina" (group) is a neutral word in SL)
+#
+# ── MEASURED ON REAL SL/HR/IT MATERIAL, 2026-08-15 ──
+# 1,032 units from r/Slovenia, r/croatia and r/italy. Until that day these dictionaries
+# rested on language knowledge and on six sentences written by hand.
+# The measurement found three FALSE POSITIVES that lengthening did not fix:
+#
+#   sporo  -> "sporoca", "sporocilo" (SL: message). 2 hits, both wrong.
+#   zanic  -> "Zanicchi" (an Italian singer).       1 hit,  wrong.
+#   rucn   -> "rucnika", "rucnikom" (HR: towel).    2 hits, both wrong.
+#
+# The fix was an ANCHOR AT THE END, not a longer stem: `sporo\b` and `zanic\b`.
+# The build function prepends \b, so `sporo\b` in the .txt becomes `\bsporo\b`.
+# Use this when the stem is already a whole word and inflection does not extend it.
+#
+# ── IMPRECISION KEPT ON PURPOSE ──
+# drag[oiae] has roughly half precision. It correctly catches "draga stvar"
+# and "stanovanja so draga" (expensive), but wrongly "proti Dragi" (a place) and "Drago mi je"
+# (a Croatian greeting). It stays because it still has to sit within the 160-character window next to
+# a tool stem, which limits the damage, while losing it would lose real price complaints.
+# Hence the unambiguous ones were added: predrag, preskup, previsok.
+# EN
+hate
+suck
+garbage
+useless
+clunky
+outdated
+buggy
+glitch
+nightmare
+overpric
+expensiv
+broken
+awful
+terrible
+frustrat
+rip.?off
+# SL
+sovraz
+sovraž
+pocas
+počas
+drag[oiae]
+sranj
+katastrof
+zanic\b
+zanič
+zastarel
+obupn
+# HR
+uzas
+užas
+sporo\b
+skupo
+smec
+smeć
+zastarj
+# IT
+schif
+lento
+pessim
+inutil
+obsolet
+predrag
+preskup
+previsok
